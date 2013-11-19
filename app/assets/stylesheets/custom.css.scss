@@ -13,7 +13,6 @@ $grayMediumLight: #eaeaea;
 
 html {
   overflow-y: scroll;
-  background-image:url('/images/Eqnx_Dusk_wall.png')
 }
 
 body {
@@ -27,7 +26,9 @@ section {
 textarea {
   resize: vertical;
 }
-
+.dody{
+  height: 100%;
+}
 .center {
   text-align: left;
   background-color: #228b22;
@@ -83,6 +84,7 @@ p {
 /* footer */
 
 footer {
+  position: relative;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
@@ -132,8 +134,8 @@ footer ul li {
   transition: width 2s, height 2s, transform 3s;
   -webkit-transition: width 2s, height 2s, -webkit-transform 3s; /* safari */
   &:hover {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg); /* safari */
   }
@@ -204,5 +206,33 @@ input {
     &:last-child {
       border-bottom: 1px solid $grayLighter;
     }
+  }
+}
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+
+.timestamp {
+  color: $grayLight;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 400px;
+    margin-bottom: 5px;
   }
 }
